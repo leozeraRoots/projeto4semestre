@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>SmarthGraphic</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" alt="Logo da SmartGraphic" width="15%" class="action">
+      <nav>
+        <ul>
+          <li class="actionPromo">promoção</li>
+          <li class="actionGallery">galeria</li>
+          <li class="actionForm">contato</li>
+          <li>sobre</li>
+          <li class="j_login">login</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div class="camera_wrap camera_blue_skin" id="camera_wrap_2">
+        <div data-thumb="" data-src="img/84.png">
+          <div class="camera_caption fadeFromBottom">
+            Aproveite essa oferta <em>Frete gratis para todo o Brasil</em>
+          </div>
+        </div>
+
+        <div data-thumb=""  data-src="img/c4.png">
+          <div class="camera_caption fadeFromBottom">
+            Fique atento! <em>Melhores Preços da Web</em>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="session_promocao">
+      <h1>promoção</h1>
+      <div class="">
+        <p>Fique ligado nas promocoes e descontos </p>
+      </div>
+
+      <article class="ajuste">
+        <img src="img/promo1.jpg" alt="" width="45%">
+        <ul>
+          <li>Descrição:<em>Camiseta 100% Algodao, não perca mais tempo</em></li>
+          <li>Valor:R$ 59,90</li>
+        </ul>
+        <button type="button" name="button">Comprar</button>
+      </article>
+
+      <article class="">
+        <img src="img/promo2.jpg" alt="" width="45%">
+        <ul>
+          <li>Descrição: <em>Camiseta 100% Algodao, não perca mais tempo</em></li>
+          <li>Valor:R$ 59,90</li>
+        </ul>
+        <button type="button" name="button">Comprar</button>
+      </article>
+
+      <article class="">
+        <img src="img/promo3.jpg" alt="" width="45%">
+        <ul>
+          <li>Descrição: <em>Camiseta 100% Algodao, não perca mais tempo</em></li>
+          <li>Valor: R$ 59,90</li>
+        </ul>
+        <button type="button" name="button">Comprar</button>
+      </article>
+
+    </section>
+
+    <section class="session_galeria">
+      <h1>Galeria</h1>
+      <p>Todas as nossas camisetas são 100% Algodão</p>
+      <ul>
+        <li class="ajuste">
+          <img src="img/promo3.jpg" alt="" width="100%">
+          <p>
+            Camiseta: Masculina<br>
+            diversas cores
+            Apenas: R$60,00
+          </p>
+          <button type="submit" name="button">Comprar</button>
+        </li>
+
+        <li>
+          <img src="img/promo3.jpg" alt="" width="100%">
+        </li>
+
+        <li>
+          <img src="img/promo3.jpg" alt="" width="100%">
+        </li>
+
+        <li>
+          <img src="img/promo3.jpg" alt="" width="100%">
+        </li>
+
+        <li class="ajuste">
+          <img src="img/promo3.jpg" alt="" width="100%">
+        </li>
+
+        <li>
+          <img src="img/promo3.jpg" alt="" width="100%">
+        </li>
+        <li>
+          <img src="img/promo3.jpg" alt="" width="100%">
+        </li>
+
+        <li>
+          <img src="img/promo3.jpg" alt="" width="100%">
+        </li>
+
+        <li class="ajuste">
+          <img src="img/promo3.jpg" alt="" width="100%">
+        </li>
+
+        <li>
+          <img src="img/promo3.jpg" alt="" width="100%">
+        </li>
+        <li>
+          <img src="img/promo3.jpg" alt="" width="100%">
+        </li>
+
+        <li>
+          <img src="img/promo3.jpg" alt="" width="100%">
+        </li>
+
+      </ul>
+    </section>
+
+    <section class="session_contato">
+      <h1>contato</h1>
+      <p>Entre em contato conosco para esclarecimentos, suporte ou sugestao </p>
+      <form class="" action="" method="post">
+        <input type="text" name="" value="" placeholder="Ex: Anderson B. Silva">
+        <input type="email" name="" value="" placeholder="Ex: anderson..tec12@gmail.com">
+        <textarea name="name" rows="8" cols="80" placeholder="seu texto aqui"></textarea>
+        <button type="button" name="button">Enviar</button>
+      </form>
+    </section>
+
+
+    <div class="modalBack">
+    </div>
+
+    <div class="modalLogin testee">
+         <button class="btn-close">X</button>
+         <img src="img/login.png" alt="" width="45%">
+         <form class="login" action="/teste" method="post">
+           <label for="email">
+             <span>email:</span>
+             <input type="text" name="email" id="nome" value="" placeholder="exemplo@exemplo.com">
+           </label>
+
+           <label for="senha">
+             <span>senha:</span>
+             <input type="password" name="senha" id="senha" value="" placeholder="Digite sua senha">
+           </label>
+           <button type="submit" name="">Login</button>
+         </form>
+         <p>
+           <span id="j_cadastrar">Click aqui para se cadastrar</span>
+         </p>
+    </div>
+
+    <div class="modalCadastroUsuario">
+      <button class="btn-close ajuste-btn">X</button>
+      <h1>Cadastro De Usuario</h1>
+      <form class="cadastroUsuario" action="/cadastro" method="post">
+        <input class="j_userEmail" type="email" name="email"  id="emailUsuario" value="" placeholder="Digite seu email">
+        <input class="j_userConfirmEmail" type="email" name=""  id="" value="" placeholder="Confirme seu email">
+        <input class="j_userPass" type="password" name="senha" id="senhaUsuario" value="" placeholder="Digite sua senha">
+        <input class="j_userConfirmPass" type="password" name="" id="" value="" placeholder="Digite digite novamente sua senha">
+        <!-- <button class="btn-continuar" type="button" id="">continuar</button> -->
+        <span class="setas setaEsquerda j_return"><i>&#xe803;</i></span>
+        <span class="setas setaEsquerda j_return2"><i>&#xe803;</i></span>
+        <span class="setas setaDireita j_next "><i>&#xe802;</i></span>
+        <span class="setas setaDireita j_next2 "><i>&#xe802;</i></span>
+
+        <input class="hide j_userInfo" type="text" name="nome" id="nomeUsuario" value="" placeholder="Digite seu nome">
+        <input class="hide j_userInfo" type="text" name="sobreNome" id="sobreNomeUsuario" value="" placeholder="Digite seu sobrenome">
+        <input class="hide j_userInfo" type="date" name="dataNascimento" id="nascimentoUsuario"value="" placeholder="Digite a data de nascimento">
+        <input class="hide j_userInfo" type="text" name="cpf" id="cpfUsuario" value="" placeholder="Digite seu cpf">
+        <input class="hide j_userInfo" type="text" name="" id="telefoneUsuario" value="" placeholder="Celular (11) 94444-1234">
+        <button class="hide btn-fini" type="button" id="">continuar</button>
+
+        <input class="hide j_userEnd" type="text" name="endereco" id="enderecoUsuario" value="" placeholder="Digite seu endereço">
+        <input class="hide j_userEnd" type="text" name="numero" id="numeroCasaUsuario" value="" placeholder="Numero">
+        <input class="hide j_userEnd" type="text" name="bairro" id="numeroCasaUsuario" value="" placeholder="Bairro">
+        <input class="hide j_userEnd" type="text" name="cidade" id="numeroCasaUsuario" value="" placeholder="Cidade">
+        <input class="hide j_userEnd" type="text" name="estado" id="numeroCasaUsuario" value="" placeholder="Estado">
+        <input class="hide j_userEnd" type="text" name="cep" id="cepUsuario" value="" placeholder="Digite seu CEP">
+
+        <button class="hide j_btnCadastrar" type="submit" id="cadastrarUsuario" name="">Cadastrar</button>
+      </form>
+    </div>
+
+    <script src="js/full.js">
+
+    </script>
+  </body>
+</html>

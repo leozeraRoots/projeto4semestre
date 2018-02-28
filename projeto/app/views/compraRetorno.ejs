@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>SmarthGraphic</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <script type="text/javascript">
+      var teste123 = <%= dados[0].id%>;
+    </script>
+    <header>
+      <img src="img/logo.png" alt="Logo da SmartGraphic" width="15%" class="action">
+      <nav>
+        <ul>
+          <li id="log">
+            <form class="" action="log" method="post">
+              <input type="text" name="email" value="<%= dados[0].email%>" style="display:none">
+              <button type="submit" name="">
+                Historico
+              </button>
+            </form>
+          </li>
+          <li id="back">voltar</li>
+          <a href="/"><li id="logoff">Sair</li></a>
+          <li id="opt" class="actionPromo">promoção</li>
+          <li id="opt1" class="actionGallery">galeria</li>
+          <li id="opt2" class="actionForm">contato</li>
+          <!-- <li id="opt3" class="userLogado">Anderson</li> -->
+          <li id="opt3" class="userLogado"><%= dados[0].nome%></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="modal_info">
+      <span>Parabéns<i><%= dados[0].nome%></i> compra realizada com sucesso</span>
+      <!-- <span>Bem vindo <i>Anderson</i> !</span> -->
+      <button type="button" name="" class="jModalInfo">fechar</button>
+    </section>
+
+    <section>
+      <div class="camera_wrap camera_blue_skin" id="camera_wrap_2">
+        <div data-thumb="" data-src="img/84.png">
+          <div class="camera_caption fadeFromBottom">
+            Aproveite essa oferta <em>Frete gratis para todo o Brasil</em>
+          </div>
+        </div>
+
+        <div data-thumb=""  data-src="img/c4.png">
+          <div class="camera_caption fadeFromBottom">
+            Fique atento! <em>Melhores Preços da Web</em>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="session_promocao">
+      <h1>promoção</h1>
+      <div class="">
+        <p>Fique ligado nas promocoes e descontos </p>
+      </div>
+
+      <article class="ajuste">
+        <img src="img/promo1.jpg" alt="" width="45%">
+        <ul>
+          <li>Camiseta:<l class="j_compraGenero0">Masculino</l></li>
+          <li >Valor:R$ <l class="j_compraValor0">59,90</l></li>
+          <li>Codigo: <l class="j_compraCodigoCamiseta0">0T12</l></li>
+        </ul>
+        <button type="button" id="j_verifica0">Comprar</button>
+      </article>
+
+      <article class="">
+        <img src="img/promo2.jpg" alt="" width="45%">
+        <ul>
+          <li>Camiseta: <l class="j_compraGenero1">Feminina</l></li>
+          <li>Valor:R$ <l   class="j_compraValor1">59,90</l></li>
+          <li>Codigo: <l class="j_compraCodigoCamiseta1">0T13</l></li>
+        </ul>
+        <button type="button" id="j_verifica1">Comprar</button>
+      </article>
+
+      <article class="">
+        <img src="img/promo3.jpg" alt="" width="45%">
+        <ul>
+          <li>Camiseta: <l class="j_compraGenero2">Infantil</l></li>
+          <li>Valor: R$ <l class="j_compraValor2">59,90</l></li>
+          <li>Codigo: <l class="j_compraCodigoCamiseta2">0T14</l></li>
+        </ul>
+        <button type="button" id="j_verifica2">Comprar</button>
+      </article>
+
+    </section>
+
+    <section class="session_galeria">
+      <h1>Galeria</h1>
+      <p>Todas as nossas camisetas são 100% Algodão</p>
+      <ul>
+        <li class="ajuste">
+          <img src="img/criancaUm.png"  alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero3">Infantil</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta3">0T15</l> <br>
+            Apenas: R$<l class="j_compraValor3">30,00<l>
+          </p>
+          <button type="submit" id="j_verifica3">Comprar</button>
+        </li>
+
+        <li>
+          <img src="img/criancaDois.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero4"> Infantil</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta4">0T16</l> <br>
+            Apenas: R$<l class="j_compraValor4">40,00</l>
+          </p>
+          <button type="submit" id="j_verifica4">Comprar</button>
+        </li>
+
+        <li>
+          <img src="img/criancaTres.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero5"> Infantil</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta5">0T17</l> <br>
+            Apenas: R$<l class="j_compraValor5">25,00</l>
+          </p>
+          <button type="submit" id="j_verifica5">Comprar</button>
+        </li>
+
+        <li>
+          <img src="img/criancaQuatro.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero6"> Infantil</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta6">0T18</l> <br>
+            Apenas: R$<l class="j_compraValor6">50,00</l>
+          </p>
+          <button type="submit" id="j_verifica6">Comprar</button>
+        </li>
+
+        <li class="ajuste">
+          <img src="img/criancaCinco.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero7"> Infantil</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta7">0T19</l> <br>
+            Apenas: R$<l class="j_compraValor7">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica7">Comprar</button>
+        </li>
+
+        <li>
+          <img src="img/criancaSeis.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero8"> Infantil</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta8">0T20</l> <br>
+            Apenas: R$<l class="j_compraValor8">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica8">Comprar</button>
+        </li>
+        <li>
+          <img src="img/criancaSete.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero9"> Infantil</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta9">0T21</l> <br>
+            Apenas: R$<l class="j_compraValor9">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica9">Comprar</button>
+        </li>
+
+        <li>
+          <img src="img/criancaOito.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero10"> Infantil</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta10">0T22</l> <br>
+            Apenas: R$<l class="j_compraValor10">30,00</l>
+          </p>
+          <button type="submit" name="button" id="j_verifica10">Comprar</button>
+        </li>
+
+        <li class="ajuste">
+          <img src="img/criancaNove.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero11"> Infantil</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta11">0T23</l> <br>
+            Apenas: R$<l class="j_compraValor11">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica11">Comprar</button>
+        </li>
+
+        <li>
+          <img src="img/criancaDez.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero12"> Infantil</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta12">0T24</l> <br>
+            Apenas: R$<l class="j_compraValor12">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica12">Comprar</button>
+        </li>
+        <li>
+          <img src="img/homemUm.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero13"> Masculina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta13">0T16</l> <br>
+            Apenas: R$<l class="j_compraValor13">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica13">Comprar</button>
+        </li>
+
+        <li>
+          <img src="img/homemDois.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero14"> Masculina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta14">0T26</l> <br>
+            Apenas: R$<l class="j_compraValor14">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica14">Comprar</button>
+        </li>
+
+        <li class="ajuste">
+          <img src="img/homemTres.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero15"> Masculina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta15">0T27</l> <br>
+            Apenas: R$<l class="j_compraValor15">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica15">Comprar</button>
+        </li>
+
+        <li >
+          <img src="img/homemQuatro.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero16"> Masculina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta16">0T28</l> <br>
+            Apenas: R$<l class="j_compraValor16">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica16">Comprar</button>
+        </li>
+
+        <li class="">
+          <img src="img/homemCinco.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero17"> Masculina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta17">0T29</l> <br>
+            Apenas: R$<l class="j_compraValor17">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica17">Comprar</button>
+        </li>
+
+        <li class="">
+          <img src="img/homemSeis.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero18"> Masculina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta18">0T30</l> <br>
+            Apenas: R$<l class="j_compraValor18">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica18">Comprar</button>
+        </li>
+
+        <li class="ajuste">
+          <img src="img/homemSete.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero19"> Masculina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta19">0T31</l> <br>
+            Apenas: R$<l class="j_compraValor19">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica19">Comprar</button>
+        </li>
+
+        <li class="">
+          <img src="img/homemOito.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero20"> Masculina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta20">0T32</l> <br>
+            Apenas: R$<l class="j_compraValor20">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica20">Comprar</button>
+        </li>
+
+        <li class="">
+          <img src="img/homemNove.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero21"> Masculina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta21">0T33</l> <br>
+            Apenas: R$<l class="j_compraValor21">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica21">Comprar</button>
+        </li>
+
+        <li class="">
+          <img src="img/homemDez.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero22"> Masculina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta22">0T34</l> <br>
+            Apenas: R$<l class="j_compraValor22">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica22">Comprar</button>
+        </li>
+
+        <li class="ajuste">
+          <img src="img/homemOnze.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero23"> Masculina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta23">0T35</l> <br>
+            Apenas: R$<l class="j_compraValor23">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica23">Comprar</button>
+        </li>
+
+        <li class="">
+          <img src="img/homemDoze.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero24"> Masculina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta24">0T22</l> <br>
+            Apenas: R$<l class="j_compraValor24">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica24">Comprar</button>
+        </li>
+
+        <li class="">
+          <img src="img/homemTreze.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero25"> Masculina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta25">0T37</l> <br>
+            Apenas: R$<l class="j_compraValor25">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica25">Comprar</button>
+        </li>
+
+        <li class="">
+          <img src="img/mulherUm.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero26"> Feminina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta26">0T38</l> <br>
+            Apenas: R$<l class="j_compraValor26">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica26">Comprar</button>
+        </li>
+
+        <li class="ajuste">
+          <img src="img/mulherDois.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero27"> Feminina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta27">0T39</l> <br>
+            Apenas: R$<l class="j_compraValor27">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica27">Comprar</button>
+        </li>
+
+        <li class="">
+          <img src="img/mulherTres.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero28"> Feminina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta28">0T40</l> <br>
+            Apenas: R$<l class="j_compraValor28">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica28">Comprar</button>
+        </li>
+
+
+
+        <li class="">
+          <img src="img/mulherCinco.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero30"> Feminina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta30">0T41</l> <br>
+            Apenas: R$<l class="j_compraValor30">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica30">Comprar</button>
+        </li>
+
+        <li class="ajuste">
+          <img src="img/mulherSeis.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero31"> Feminina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta31">0T42</l> <br>
+            Apenas: R$<l class="j_compraValor31">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica31">Comprar</button>
+        </li>
+
+        <li class="">
+          <img src="img/mulherSete.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero32"> Feminina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta32">0T43</l> <br>
+            Apenas: R$<l class="j_compraValor32">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica32">Comprar</button>
+        </li>
+
+        <li class="">
+          <img src="img/mulherOito.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero33"> Feminina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta33">0T44</l> <br>
+            Apenas: R$<l class="j_compraValor33">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica33">Comprar</button>
+        </li>
+
+        <li class="">
+          <img src="img/mulherNove.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero34"> Feminina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta34">0T45</l> <br>
+            Apenas: R$<l class="j_compraValor34">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica34">Comprar</button>
+        </li>
+
+        <li class="ajuste">
+          <img src="img/mulherDez.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero35"> Feminina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta35">0T46</l> <br>
+            Apenas: R$<l class="j_compraValor35">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica35">Comprar</button>
+        </li>
+        <li class="">
+          <img src="img/mulherDoze.png" alt="" width="100%">
+          <p>
+            Camiseta: <l class="j_compraGenero36"> Feminina</l><br>
+            Codigo: <l class="j_compraCodigoCamiseta36">0T47</l> <br>
+            Apenas: R$<l class="j_compraValor36">30,00</l>
+          </p>
+          <button type="submit" id="j_verifica36">Comprar</button>
+        </li>
+      </ul>
+    </section>
+
+    <section class="session_contato">
+      <h1>contato</h1>
+      <p>Entre em contato conosco para esclarecimentos, suporte ou sugestao </p>
+      <form class="" action="" method="post">
+        <input type="text" name="" value="" placeholder="Ex: Anderson B. Silva">
+        <input type="email" name="" value="" placeholder="Ex: anderson.tec12@gmail.com">
+        <textarea name="name" rows="8" cols="80" placeholder="seu texto aqui"></textarea>
+        <button type="button" name="button">Enviar</button>
+      </form>
+    </section>
+
+
+    <div class="modalBack">
+    </div>
+
+    <div class="modalCompra">
+       <button class="btn-close">X</button>
+      <h2>Processo De Compra</h2>
+
+      <form class="" action="/comprar" method="post">
+        <label for="produtoGenero">
+          <span>camiseta</span>
+          <input type="text" name="camiseta" value="" id="produtoGenero">
+        </label>
+
+        <label for="produtoValor">
+          <span>Valor</span>
+          <input type="text" name="valor" value="" id="produtoValor" >
+        </label>
+        <label for="produtoGenero">
+          <span>Quantidade</span>
+          <select class="" name="quantidade" id="produtoQuanti">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+
+          <span class="ajuste">Cor</span>
+          <select class="" name="cor">
+            <option value="preto">Preto</option>
+            <option value="branco">Branco</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="azul">Azul</option>
+            <option value="cinza">Cinza</option>
+            <option value="rosa">Rosa</option>
+          </select>
+
+        </label>
+
+        <label for="produtoCodigo">
+          <span>Codigo</span>
+          <input type="text" name="codigo" value="" id="produtoCodigo">
+        </label>
+        <label for="tamanho">
+          <span>Tamanho</span>
+          <select class="" name="tamanho">
+            <option value="P">P</option>
+            <option value="M">M</option>
+            <option value="G">G</option>
+            <option value="GG">GG</option>
+            <option value="XG">XG</option>
+          </select>
+        </label>
+        <input style="display:none" type="text" name="data" id="data" value="">
+        <input style="display:none" type="text" name="codCompra" id="codCompra" value="">
+        <input style="display:none" type="text" name="compradorEmail" value="<%=dados[0].email%>">
+        <input style="display:none" type="text" name="compradorId" value="<%=dados[0].id%>">
+
+        <button type="submit" name="" class="j_confirmCompra">compra</button>
+      </form>
+         <p>
+           <span id="j_cadastrar">Click aqui para se cadastrar</span>
+         </p>
+    </div>
+
+    <div class="modalCadastroUsuario">
+      <button class="btn-close ajuste-btn">X</button>
+      <h1>Cadastro De Usuario</h1>
+      <form class="cadastroUsuario" action="/cadastroUsuario" method="post">
+        <input class="j_userEmail" type="email" name="email"  id="emailUsuario" value="" placeholder="Digite seu email">
+        <input class="j_userConfirmEmail" type="email" name=""  id="" value="" placeholder="Confirme seu email">
+        <input class="j_userPass" type="password" name="senha" id="senhaUsuario" value="" placeholder="Digite sua senha">
+        <input class="j_userConfirmPass" type="password" name="" id="" value="" placeholder="Digite digite novamente sua senha">
+        <!-- <button class="btn-continuar" type="button" id="">continuar</button> -->
+        <span class="setas setaEsquerda j_return"><i>&#xe803;</i></span>
+        <span class="setas setaEsquerda j_return2"><i>&#xe803;</i></span>
+        <span class="setas setaDireita j_next "><i>&#xe802;</i></span>
+        <span class="setas setaDireita j_next2 "><i>&#xe802;</i></span>
+
+        <input class="hide j_userInfo" type="text" name="nome" id="nomeUsuario" value="" placeholder="Digite seu nome">
+        <input class="hide j_userInfo" type="text" name="sobreNome" id="sobreNomeUsuario" value="" placeholder="Digite seu sobrenome">
+        <input class="hide j_userInfo" type="date" name="nascimento" id="nascimentoUsuario"value="" placeholder="Digite a data de nascimento">
+        <input class="hide j_userInfo" type="text" name="cpf" id="cpfUsuario" value="" placeholder="Digite seu cpf">
+        <input class="hide j_userInfo" type="text" name="celular" id="telefoneUsuario" value="" placeholder="Celular (11) 94444-1234">
+        <button class="hide btn-fini" type="button" id="">continuar</button>
+
+        <input class="hide j_userEnd" type="text" name="endereco" id="enderecoUsuario" value="" placeholder="Digite seu endereço">
+        <input class="hide j_userEnd" type="text" name="numero" id="numeroCasaUsuario" value="" placeholder="Numero">
+        <input class="hide j_userEnd" type="text" name="bairro" id="numeroCasaUsuario" value="" placeholder="Bairro">
+        <input class="hide j_userEnd" type="text" name="cidade" id="numeroCasaUsuario" value="" placeholder="Cidade">
+        <input class="hide j_userEnd" type="text" name="estado" id="numeroCasaUsuario" value="" placeholder="Estado">
+        <input class="hide j_userEnd" type="text" name="cep" id="cepUsuario" value="" placeholder="Digite seu CEP">
+
+        <button class="hide j_btnCadastrar" type="submit" id="cadastrarUsuario" name="">Cadastrar</button>
+      </form>
+    </div>
+
+    <script src="js/full.js">
+
+    </script>
+  </body>
+</html>

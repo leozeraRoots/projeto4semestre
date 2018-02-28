@@ -1,0 +1,71 @@
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+  <body>
+    <script type="text/javascript">
+
+    </script>
+    <header>
+      <img src="img/logo.png" alt="Logo da SmartGraphic" width="15%" class="action">
+      <nav>
+        <ul>
+          <li id="log">Historico</li>
+          <li id="back">voltar</li>
+          <a href="/"><li id="logoff">Sair</li></a>
+          <li id="opt" class="actionPromo">promoção</li>
+          <li id="opt1" class="actionGallery">galeria</li>
+          <li id="opt2" class="actionForm">contato</li>
+          <li id="opt3" class="userLogado">cliente</li>
+
+        </ul>
+      </nav>
+    </header>
+      <h1>Historico de compras</h1>
+      <hr>
+    <%for(var i = 0 ; dados.length > i; i++){ %>
+
+      <ul>
+        <li class="item"><span>Codigo de compra </span>  <i> <%= dados[i][0].codCompra %></i></li>
+        <li class="item"><span>Email </span>   <i><%= dados[i][0].compradorEmail %></i></li>
+        <li class="item"><span>Produto </span>  <i><%= dados[i][0].codigo %></i></li>
+        <li class="item"><span>Camiseta</span>  <i><%= dados[i][0].camiseta %></i></li>
+        <li class="item"><span>Quantidade</span>   <i><%= dados[i][0].quantidade %></i></li>
+        <li class="item"><span>Valor</span>  <i><%= dados[i][0].valor %></i></li>
+        <li class="item"><span>Tamanho</span>  <i><%= dados[i][0].tamanho %></i></li>
+        <li class="item"><span>Cor</span>  <i><%= dados[i][0].cor %></i></li>
+        <li class="item"><span>Data</span>  <i><%= dados[i][0].data %></i></li>
+      </ul>
+      <hr>
+    <% } %>
+
+    <style media="screen">
+      li{
+        list-style: none;
+      }
+      .item{
+        font-size: 1.2em;
+      }
+
+      span{
+        background: rgb(0, 104, 242);
+        color:white;
+        padding: 0.5em;
+        margin-top: 0.25em;
+        display: inline-block;
+      }
+
+      i{
+        background: rgba(0,0,0,0.2);
+        color:black;
+        padding: 0.5em;
+      }
+
+      h1{
+        text-align: center;
+      }
+    </style>
+    <script src="js/full.js">
+    </script>
+  </body>
+</html>

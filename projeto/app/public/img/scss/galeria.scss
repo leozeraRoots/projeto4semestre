@@ -1,0 +1,35 @@
+.session_galeria{
+    h1, p{
+      text-align: center;
+    }
+
+    p{
+      margin-bottom: 1.5em;
+      display: block;
+    }
+
+  ul{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  li{
+    list-style: none;
+    width: 15%;
+    margin: 0.5em 0.5em;
+    padding: 2em;
+    text-align: center;
+    border-radius: 8%;
+    border:solid 2px rgb(0, 0, 0);
+    &:hover{
+      border:solid 2px rgb(78, 240, 118);
+    }
+    transition: all 0.3s linear;
+
+  }
+  .ajuste{
+    margin-left: 7em;
+  }
+
+}
